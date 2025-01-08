@@ -1,0 +1,109 @@
+body{
+    background-color: rgba(240, 248, 255, 0.615);
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#SidebarTittle{
+    padding-left: 20px;
+}
+
+#SideBarCont{
+    background-color: burlywood;
+    display: block;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+}
+
+.SidebarItem:hover{
+    background-color: black;
+}
+
+#SideBarCont ul a{
+    display: block;
+    font-size: 15px;
+    padding-left: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 60px;
+
+
+}
+
+#SidebarTittle{
+    line-height: 40px;
+}
+
+/*******************************************/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Main Container Styling */
+  #MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #eacaca;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Title Bar Styling */
+  #TittleBar {
+    width: 100%;
+    height: 60px;
+    background-color: #b86f15;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  /* Container Class Styling */
+  .ContainerClass {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Icons Styling */
+  .Icons {
+    width: 40px;
+    height: 40px;
+    background-color: #ffa2b3;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  /* Main Text Styling */
+  #Maintext_1, #Maintext_2 {
+    font-size: 18px;
+    color: #333;
+  }
