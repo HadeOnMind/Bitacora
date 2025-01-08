@@ -2,12 +2,12 @@ body{
     background-color: rgba(240, 248, 255, 0.615);
 }
 
-<<<<<<< HEAD
 *{
     list-style: none;
     text-decoration: none;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -16,15 +16,13 @@ body{
     padding-left: 20px;
 }
 
-=======
 
 
->>>>>>> e06db0b202134244916ab151c753a6f0b35eafd5
+
 #SideBarCont{
     background-color: burlywood;
     display: block;
     padding: 15px;
-<<<<<<< HEAD
     position: fixed;
     height: 100%;
     width: 200px;
@@ -32,6 +30,10 @@ body{
 
 .SidebarItem:hover{
     background-color: black;
+}
+
+.SidebarItem:active{
+    background-color: burlywood;
 }
 
 #SideBarCont ul a{
@@ -52,13 +54,6 @@ body{
 
 /*******************************************/
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* Main Container Styling */
   #MainContainer {
     display: flex;
     flex-direction: column;
@@ -69,7 +64,7 @@ body{
     font-family: Arial, sans-serif;
   }
 
-  /* Title Bar Styling */
+
   #TittleBar {
     width: 100%;
     height: 60px;
@@ -84,7 +79,7 @@ body{
     margin-bottom: 20px;
   }
 
-  /* Container Class Styling */
+
   .ContainerClass {
     display: flex;
     align-items: center;
@@ -98,7 +93,7 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  /* Icons Styling */
+
   .Icons {
     width: 40px;
     height: 40px;
@@ -108,11 +103,69 @@ body{
     margin-right: 15px;
   }
 
-  /* Main Text Styling */
+
   #Maintext_1, #Maintext_2 {
     font-size: 18px;
     color: #333;
   }
-=======
+
+
+#MainContainer{
+    max-width: 100%;
+    max-height: 100%;
 }
->>>>>>> e06db0b202134244916ab151c753a6f0b35eafd5
+
+#TittleBar {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/media/bgVintage2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: whitesmoke;
+    height: 400px;
+}
+
+
+
+#EndingSegmentCont{
+
+    padding-left: 200px;
+    margin: 0;
+    background-color: coral;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.circle {
+    display: inline-block;  /* Make the span behave like a block element */
+    width: 100px;           /* Set the width */
+    height: 100px;          /* Set the height */
+    background-color: #3498db;  /* Background color of the circle */
+    border-radius: 50%;     /* Makes the shape round */
+    text-align: center;     /* Center the text horizontally */
+    line-height: 100px;     /* Center the text vertically */
+    color: white;           /* Text color */
+    font-size: 20px;        /* Font size */
+}
+
+
+
+#EndingLinks{
+    padding: 20px;
+    margin: 0;
+}
+
+#EndinglinksMiddle{
+    display: flex;
+    flex-direction: column;
+}
+
+#EndingsegmentFinal{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
