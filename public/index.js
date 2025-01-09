@@ -1,22 +1,16 @@
 /* BITACORA ON WORKING PROGRESS*/
 
 
-let ProgressBar = 3;
-const progress = ProgressBar.toString
-console.log(progress + '%')
+const PageImageLeft = document.getElementById('PageImageLeft');
+//const PageImageRight = document.getElementById('PageImageRight');
+
+const imageInputLeft = document.getElementById('imageInputLeft')
+//const imageInputRight = document.getElementById('imageInputRight')
 
 
 
 let textdiv = document.getElementsByClassName('PageText');
-/*
-textdiv.addEventListener("click", (event)=>{
-    divclick()
-})
 
-function divclick() {
-    console.log("click working")
-} 
-*/
 
 for(let i = 0; i < textdiv.length; i++){
     textdiv[i].addEventListener('click', ()=> {
@@ -27,6 +21,66 @@ for(let i = 0; i < textdiv.length; i++){
 function divclick() {
     console.log("Click working");
 }
+
+
+/*
+PageImageRight.addEventListener('click', () =>{
+    imageInputRight.click();
+    divclick();
+});
+*/
+
+
+
+
+PageImageLeft.addEventListener('click', () =>{
+    imageInputLeft.click();
+    divclick();
+});
+
+
+
+
+imageInputLeft.addEventListener('change', (e) => {
+    const file = e.target.files[0]
+    if (file) {
+        
+        const reader = new FileReader();
+        reader.onload = (e) => {
+
+            PageImageLeft.style.backgroundImage = `url(${e.target.result})`;
+            PageImageLeft.textContent = '';
+
+        } 
+        reader.readAsDataURL(file)
+    }
+
+})
+
+
+
+/*
+imageInputRight.addEventListener('change', (e) => {
+    const file = e.target.files[0]
+    if (file) {
+        
+        const reader = new FileReader();
+        reader.onload = (e) => {
+
+            PageImageRight.style.backgroundImage = `url(${e.target.result})`;
+            PageImageRight.textContent = '';
+
+        } 
+        reader.readAsDataURL(file)
+    }
+
+})
+
+*/
+
+
+
+
 
 
 

@@ -45,6 +45,16 @@ body{
     background-color: #ddd;
     margin-bottom: 20px;
     border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
   }
   
   .PageText {
@@ -90,4 +100,13 @@ body{
     width: 100%;
     height: 100%;
     text-align: start;
+  }
+
+
+  #imageInputRight{
+    display: none;
+  }
+
+  #imageInputLeft{
+    display: none;
   }

@@ -21,11 +21,21 @@ body{
 
 #SideBarCont{
     background-color: burlywood;
+    box-shadow: inset;
+    color: #333;
     display: block;
-    padding: 15px;
+    padding: 2%;
     position: fixed;
     height: 100%;
-    width: 200px;
+    width: 12%;
+}
+
+
+#SideBarCont{
+    border-color: rgb(25, 15, 2);
+    border-right: 5%;
+    border-inline-style: inherit;
+    border-style: solid;
 }
 
 .SidebarItem:hover{
@@ -39,17 +49,18 @@ body{
 #SideBarCont ul a{
     display: block;
     font-size: 15px;
-    padding-left: 20px;
+    padding-left: 2%;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     line-height: 60px;
+    text-align: start;
 
 
 }
 
 #SidebarTittle{
-    line-height: 40px;
+    text-decoration: wavy;
 }
 
 /*******************************************/
@@ -58,10 +69,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     background-color: #eacaca;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
+    justify-content: space-evenly;
   }
 
 
@@ -169,3 +180,10 @@ body{
     padding: 20px;
 }
 
+
+@media screen and (min-width: 780px) {
+    .full-width-img {
+    margin: auto;
+    width: 90%;
+    }
+}

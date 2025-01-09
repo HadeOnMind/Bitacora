@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Background Image</title>
+  <style>
+
+    
+    #imageDiv {
+      width: 200px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #imageDiv:hover {
+      border-color: #888;
+    }
+    #imageInput {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div id="imageDiv">Click to Add Image</div>
+<input type="file" id="imageInput" accept="image/*">
+
+<script>
+  const imageDiv = document.getElementById('imageDiv');
+  const imageInput = document.getElementById('imageInput');
+
+  imageDiv.addEventListener('click', () => {
+    imageInput.click();
+  });
+
+
+
+  imageInput.addEventListener('change', (event) => {
+    const file = event.target.files[0]; // Get the selected file
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        imageDiv.style.backgroundImage = `url(${e.target.result})`; // Set the background image
+        imageDiv.textContent = ''; // Remove the placeholder text
+      };
+      reader.readAsDataURL(file); // Read the file as a data URL
+    }
+  });
+</script>
+
+</body>
+</html>

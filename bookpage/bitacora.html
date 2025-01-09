@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITACORA BOOK PAGE</title>
 
-   
+    <script src="../public/index.js" async></script>
 
     <link rel="stylesheet" href="\css\BookPage.css">
 </head>
@@ -17,7 +17,9 @@
 
 
         <div class="Page" id="LeftPage">
-            <div class="PageImage"></div>
+            <div class="PageImage" id="PageImageLeft">Click to Add Image</div>
+            <input type="file" id="imageInputLeft" accept="image/*">
+            
             <div class="PageText">
                 <textarea name="lefText" id="lefText" placeholder="Place some text right here"></textarea>
             </div>
@@ -25,7 +27,9 @@
     
         
         <div class="Page" id="RightPage">
-            <div class="PageImage"></div>
+            <div class="PageImage">Click to Add Image</div>
+            <input type="file" id="imageInputRight" accept="image/*">
+
             <div class="PageText">
                 <textarea name="righText" id="righText" placeholder="Place some text right here"></textarea>
             </div>
@@ -34,7 +38,7 @@
     </div>
 
 
-    <script src="../public/index.js"></script>
+    
 </body>
 
 </html>
