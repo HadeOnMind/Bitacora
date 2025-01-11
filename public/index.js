@@ -58,7 +58,6 @@ imageInputLeft.addEventListener('change', (e) => {
 })
 
 
-
 /*
 imageInputRight.addEventListener('change', (e) => {
     const file = e.target.files[0]

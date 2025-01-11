@@ -1,4 +1,26 @@
-import { useState } from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <p>Welcome to your first React app.</p>
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+
+
+
+
+
+/*
+
 
 function LeftPage() {
   // React state to handle the image and text area content
@@ -21,11 +43,11 @@ function LeftPage() {
   return (
     <div className="Page" id="LeftPage">
       <div className="PageImage" id="PageImageLeft">
-        {/* Show the selected image or the default text */}
+        
         {image ? <img src={image} alt="Selected" /> : 'Click to Add Image'}
       </div>
       
-      {/* Image input field */}
+
       <input 
         type="file" 
         id="imageInputLeft" 
@@ -34,7 +56,7 @@ function LeftPage() {
       />
       
       <div className="PageText">
-        {/* Text area, controlled component */}
+    
         <textarea 
           name="lefText" 
           id="lefText" 
@@ -48,3 +70,6 @@ function LeftPage() {
 }
 
 export default LeftPage;
+
+
+*/
