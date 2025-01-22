@@ -3,11 +3,15 @@ import SideBar from './comp/sidebar.js'
 
 function sheet() {
   return(
-    <div>
-      <p>WORKING</p>
+    <div id='MainContainer'>
       <div>
         <SideBar />
       </div>
+      <div>
+        
+      </div>
+
+
     </div>
   );
 };
