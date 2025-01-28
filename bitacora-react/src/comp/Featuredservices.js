@@ -26,17 +26,17 @@ function FeaturedServices(){
         <div>
 
             <div>
-                <img src="https://via.placeholder.com/400x300" alt="Placeholder Image" />
+                <img src="bitacora-react\public\index.html" alt="Placeholder Image" />
                 <p>Customization...</p>
             </div> 
 
             <div>
-                <img src="https://via.placeholder.com/400x300" alt="Placeholder Image" />
+                <img src="bitacora-react\public\index.html" alt="Placeholder Image" />
                 <p></p>
             </div>
 
             <div>
-                <img src="https://via.placeholder.com/400x300" alt="Placeholder Image" />
+                <img src="bitacora-react\public\index.html" alt="Placeholder Image" />
                 <p></p>
             </div>
 
