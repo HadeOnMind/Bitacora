@@ -1,3 +1,7 @@
+body{
+  display: flex;
+}
+
 .App {
   text-align: center;
 }
@@ -45,9 +49,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* additions here*/
   height: 100vh;
-  background: black;
+  background: rgb(239, 173, 173);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+
+#MainContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+#TittleCont{
+  display: grid;
+  place-items: center;
+  height:30vh;
+  width: 80vw;
+  margin-left: 20vw;
+}
+
+
+#tittleWrapper{
+  background-color: whitesmoke;
 }

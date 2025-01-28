@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import './styles.css'
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import { Outlet, Link } from "react-router-dom";
+
 
 
 const whiteline = <div id='whiteline' className='whiteline'></div>
@@ -55,15 +57,16 @@ function DefaultSidebar(){
 }
 
 
-
 function SideBar(){
     return(
-        <Sidebar id='SidebarMAIN' style={{ height: "100vh", width: "20vh", backgroundColor: "yellow" }}>
-            <Menu iconShape="square" id='MenuButton' onClick={CollapseSidebar}>
+        <Sidebar id='SidebarMAIN' style={{  position: "fixed", height: "100%", width: "20vw", backgroundColor: "yellow" }}>
+            <Menu iconShape="square" id='MenuButton'>
                 <MenuItem icon={<MenuOutlinedIcon />} >Menu!</MenuItem>
                 <MenuItem>{profile}</MenuItem> 
-                <SubMenu className='submenutitle' title={title}>
-                    <MenuItem>Mis Bitacoras</MenuItem>
+                <SubMenu className='submenutitle' title='Hello'>
+                    <MenuItem>
+                    <Link to="/bitacora"> Mi bitacora</Link>
+                    </MenuItem>
                     <MenuItem>Crear Nueva</MenuItem>
                     <MenuItem>Comunidad</MenuItem>
                 </SubMenu>
