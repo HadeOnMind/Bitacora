@@ -49,7 +49,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* additions here*/
   height: 100vh;
-  background: rgb(239, 173, 173);
+  background: #3498db;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

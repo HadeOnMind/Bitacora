@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'
+import '../CompStyles/styles.css'
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';

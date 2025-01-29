@@ -1,5 +1,5 @@
 import React from 'react';
-import '../comp/styles.css'
+import '../CompStyles/styles.css'
 
 export default function Bitacora () {
  return(

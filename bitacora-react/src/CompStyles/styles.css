@@ -1,0 +1,129 @@
+.whiteline {
+    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+  
+  .beigeline {
+    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+  
+  .blueline {
+    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 10px 0; /* Adjust the spacing as needed */
+  }
+
+
+
+  
+
+
+
+#TitleCont{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+
+#DocsMain{
+  background-color: aqua;
+}
+
+
+
+
+
+.documentation-header {
+  background-color: #3498db; /* Using the primary color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.documentation-title {
+  margin: 0;
+  font-size: 2em;
+}
+
+.documentation-nav {
+  margin-top: 10px;
+}
+
+.documentation-nav-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.documentation-nav-item {
+  display: inline;
+  margin: 0 15px;
+}
+
+.documentation-nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.documentation-nav-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.login-container {
+  background-color: #ecf0f1; /* Background Color */
+  color: #2c3e50; /* Text Color */
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #3498db; /* Primary Color */
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50; /* Text Color */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: #3498db; /* Primary Color */
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db; /* Primary Color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #2980b9; /* Darker shade of Primary Color */
+}

@@ -1,13 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SideBar from './comp/sidebar.js';
-import MainTittle from './comp/mainTittle.js';
-import TextSection from './comp/BasictextSection.js';
-import Footer from './comp/footer.js';
-import FeaturedServices from './comp/Featuredservices.js';
-import Bitacora from './routerComps/bitacora';
-import Documentation from './routerComps/documentation';
-import './App.css';
+import SideBar from './Components/sidebar.js';
+import Bitacora from './MainApp/bitacora.js';
+import Documentation from './MainApp/documentation.js';
+import Home from './MainApp/home.js';
+import Profile from './MainApp/profile.js'; 
+
 
 function App() {
   return (
@@ -18,22 +16,17 @@ function App() {
         </div>
 
         <div id='TittleCont'>
-          <div id='tittleWrapper'>
-            <MainTittle />
-          </div>
-
+        
           <div>
             <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Profile" element={<Profile />} />
               <Route path="/Bitacora" element={<Bitacora />} />
               <Route path="/Documentation" element={<Documentation />} />
-              <Route path="/" element={<div>Home Page</div>} /> {/* Add a home route */}
               <Route path="*" element={<div>Page Not Found</div>} />
             </Routes>
-
-            <TextSection />
-            <FeaturedServices />
-            <Footer />
           </div>
+          
         </div>
       </div>
     </Router>

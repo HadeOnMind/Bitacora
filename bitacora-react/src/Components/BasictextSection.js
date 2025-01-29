@@ -1,6 +1,5 @@
 import React from 'react';
-import './styles.css'
-import { Divider } from '@mui/material';
+import '../CompStyles/styles.css'
 import People from '@mui/icons-material/People';
 
 
