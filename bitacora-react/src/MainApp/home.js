@@ -16,6 +16,11 @@ export default function Home (){
             </div>
             <TextSection />
             <FeaturedServices />
+            <TextSection />
+            <FeaturedServices />
+            <TextSection />
+            <FeaturedServices />
+            <TextSection />
             <Footer />
         </div>
     );

@@ -1,0 +1,63 @@
+/* Sidebar Container */
+#SidebarMAIN {
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  /* Collapsed Sidebar */
+  #SidebarMAIN.collapsed {
+    width: 80px !important; /* Smaller width when collapsed */
+  }
+  
+  /* Menu Items */
+  #MenuButton {
+    padding: 10px;
+  }
+  
+  /* Hover and Active States */
+  #MenuButton .ps-menu-button:hover {
+    background-color: #3498db !important; /* Primary color on hover */
+    color: #ecf0f1 !important; /* Light text on hover */
+  }
+  
+  #MenuButton .ps-menu-button.active {
+    background-color: #e74c3c !important; /* Accent color for active item */
+    color: #ecf0f1 !important; /* Light text for active item */
+  }
+  
+  /* Menu Header */
+  #MenuButton .ps-menu-header {
+    background-color: #3498db; /* Primary color for header */
+    color: #ecf0f1; /* Light text for header */
+    border-bottom: 2px solid #2c3e50; /* Dark border for separation */
+  }
+  
+  /* Links */
+  #MenuButton a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+  }
+  
+  /* Icons */
+  #MenuButton .ps-menu-icon {
+    margin-right: 10px; /* Add spacing between icon and text */
+  }
+  
+  /* Collapse Button */
+  #MenuButton .ps-menu-button:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #SidebarMAIN {
+      width: 80px !important; /* Smaller width on small screens */
+    }
+  
+    #MenuButton .ps-menu-button span {
+      display: none; /* Hide text on small screens */
+    }
+  }

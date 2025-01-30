@@ -11,7 +11,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function Footer ( ){
     return(
-        <div>
+        <footer id='footer-section'>
             <div>
 
                 <h2>Work with us</h2>
@@ -43,7 +43,7 @@ function Footer ( ){
 
             </div>
            
-        </div>
+        </footer>
     );
 }
 
