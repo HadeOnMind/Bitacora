@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "./sidebar.css"; // Import your CSS file
 
@@ -13,6 +12,12 @@ const SideBar = () => {
   const scrollToFooter = () => {
     setTimeout(() => {
       document.getElementById("footer-section").scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  };
+  
+  const scrollToTitle = () => {
+    setTimeout(() => {
+      document.getElementById("TitleCont").scrollIntoView({ behavior: "smooth" });
     }, 100);
   };
 
@@ -51,7 +56,7 @@ const SideBar = () => {
 
 
         {/* Menu Items */}
-        <MenuItem component={<Link to="/">Home</Link>}>{!collapsed && "Home"}</MenuItem>
+        <MenuItem onClick={scrollToTitle} component={<Link to="/">Home</Link>}>{!collapsed && "Home"}</MenuItem>
         <MenuItem component={<Link to="/Profile">Profile</Link>}>
           {!collapsed && "Profile"}
         </MenuItem>

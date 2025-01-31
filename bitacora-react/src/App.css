@@ -49,7 +49,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* additions here*/
   height: 100vh;
-  background: #3498db;
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -61,6 +61,8 @@ code {
 #MainContainer{
   display: flex;
   flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
 
 #TittleCont{
@@ -73,5 +75,5 @@ code {
 
 
 #tittleWrapper{
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
 }

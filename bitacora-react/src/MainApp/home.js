@@ -1,10 +1,11 @@
 import React from 'react'
 import '../App.css';
 
-import MainTittle from '../Components/mainTittle'
-import TextSection from '../Components/BasictextSection'
-import FeaturedServices from '../Components/Featuredservices'
-import Footer from '../Components/footer'
+import MainTittle from '../Components/HomeMain/mainTittle'
+import TextSection from '../Components/HomeMain/BasictextSection'
+import FeaturedServices from '../Components/HomeMain/Featuredservices'
+import Footer from '../Components/HomeMain/footer'
+
 
 
 
