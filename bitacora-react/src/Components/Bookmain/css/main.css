@@ -1,0 +1,28 @@
+#Footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    background-color: rgb(33, 156, 109);
+    box-shadow: 15px 10px 15px rgb(251, 255, 0);
+}
+
+.Footer{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.Header{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+
+#HeaderWrapper{
+    display: flex;
+    flex-direction: column;
+}

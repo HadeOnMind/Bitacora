@@ -6,6 +6,7 @@ import Documentation from './MainApp/documentation.js';
 import Home from './MainApp/home.js';
 import Profile from './MainApp/profile.js'; 
 import WIPPage from './Components/Wip/WIP.js';
+import './App.css'
 
 
 function App() {
