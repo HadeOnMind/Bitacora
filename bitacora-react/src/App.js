@@ -23,7 +23,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/Profile" element={<Profile />} />
-              <Route path="/Bitacora" element={<Bitacora />} />
+              <Route path="/Bitacora/*" element={<Bitacora />} />
               <Route path="/Documentation" element={<Documentation />} />
               <Route path="/WIP" element={<WIPPage />} />
               <Route path="*" element={<div>Page Not Found</div>} />

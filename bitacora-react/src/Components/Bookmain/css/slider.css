@@ -1,0 +1,44 @@
+
+.slider-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-direction: column;
+  }
+  
+
+  .slider {
+    display: flex;
+    gap: 10px; /* Space between items */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+
+  .slider-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    text-align: center;
+  }
+  
+
+  .placeholder-square {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Make it a square */
+    background-color: #e0e0e0; /* Light gray placeholder color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+
+  @media (max-width: 768px) {
+    .placeholder-square {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .placeholder-square {
+      width: 60px;
+      height: 60px;
+    }
+  }
