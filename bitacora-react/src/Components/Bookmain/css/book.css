@@ -1,0 +1,133 @@
+/* BookNavbar.css */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#MainBookContainer{
+    width: 75vw;
+    height: 100vh;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%;
+
+  }
+  
+  .navbar-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rebeccapurple;
+  }
+  
+  .navbar-placeholders {
+    display: flex;
+    gap: 20px;
+  }
+
+
+  /* SlideSidebar.css */
+.slide-sidebar {
+    width: 120px; /* Width of the sidebar */
+    height: 100vh; /* Full height */
+    background-color: #f8f9fa; /* Light background */
+    border-right: 1px solid #ddd; /* Border to separate from main content */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if there are many slides */
+  }
+  
+  .slide-thumbnail {
+    width: 100%;
+    height: 80px; /* Height of each thumbnail */
+    background-color: #fff; /* White background for thumbnails */
+    border: 1px solid #ccc; /* Border for thumbnails */
+    margin-bottom: 10px; /* Space between thumbnails */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer; /* Indicate that thumbnails are clickable */
+    margin-top: 1vh;
+  }
+  
+  .slide-thumbnail:hover {
+    border-color: #007bff; 
+  }
+
+
+
+.MiddleRow{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.book-layout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .book-header {
+    padding: 20px;
+    background-color: #2c3e50; 
+    color: #fff; 
+    text-align: center;
+  }
+  
+  .book-content {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    gap: 20px; 
+  }
+  
+  .book-page {
+    flex: 1;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .text-placeholder {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border: 1px dashed #ccc; 
+    color: #666; 
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    padding: 50px;
+    background-color: #f0f0f0; 
+    border: 1px dashed #ccc; 
+    color: #666;
+    text-align: center;
+  }
+  
+  .book-footer {
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff; 
+    text-align: center;
+  }
