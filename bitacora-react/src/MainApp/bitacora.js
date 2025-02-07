@@ -32,6 +32,9 @@ export default function Bitacora () {
 
           </div>
 
+          {!BookPath &&(<div id="placerholdersection">
+            placeholdersection
+          </div>) }
 
 
           {!BookPath &&(<div id="bitacoraFooter">

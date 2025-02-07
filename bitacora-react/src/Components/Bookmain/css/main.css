@@ -1,28 +1,38 @@
-#Footer-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    background-color: rgb(33, 156, 109);
-    box-shadow: 15px 10px 15px rgb(251, 255, 0);
-}
+/* main.css */
+.Footer {
+    background-color: #f4f1ea;
+    border-top: 1px solid #8b6b61;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #5d4037;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
 
-.Footer{
-    margin: 0%;
-    padding: 0%;
-}
-
-
-.Header{
-    display: flex;
-    align-items: center;
-    place-content: center;
-    justify-content: center;
-    background-color: aquamarine;
-}
-
-
-#HeaderWrapper{
-    display: flex;
-    flex-direction: column;
-}
+/* BitacoraHeader.css */
+.Header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #343a40;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #HeaderWrapper {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #HeaderWrapper h1 {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    font-size: 2.5em;
+  }
+  
+  #HeaderWrapper p {
+    font-family: 'Georgia', serif;
+    color: #6c757d;
+    font-size: 1.2em;
+  }
+  

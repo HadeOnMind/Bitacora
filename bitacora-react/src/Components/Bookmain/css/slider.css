@@ -1,44 +1,50 @@
-
+/* slider.css */
 .slider-container {
-    width: 65%;
-    overflow-x: auto; 
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    place-content: center;
-    flex-direction: column;
-  }
-  
+  background-color: #f4f1ea;
+  border: 2px solid #8b6b61;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', serif;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
 
-  .slider {
-    display: flex;
-    gap: 10px; /* Space between items */
-    padding: 0 10px; /* Add some padding to the sides */
-  }
+#slider-title {
+  font-family: 'Garamond', serif;
+  color: #3e2723;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  .slider-item {
-    flex: 0 0 auto; /* Prevent items from shrinking or growing */
-    text-align: center;
-  }
-  
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
 
-  .placeholder-square {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Make it a square */
-    background-color: #e0e0e0; /* Light gray placeholder color */
-    border-radius: 8px; /* Optional: Add rounded corners */
-  }
+.slider-item {
+  background-color: #fff;
+  border: 1px solid #8b6b61;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', monospace;
+}
 
-  @media (max-width: 768px) {
-    .placeholder-square {
-      width: 80px;
-      height: 80px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .placeholder-square {
-      width: 60px;
-      height: 60px;
-    }
-  }
+.slider-item .placeholder-square {
+  background-color: #c5a880;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.slider-item p {
+  color: #5d4037;
+  margin: 0;
+}

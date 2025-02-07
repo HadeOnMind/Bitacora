@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import BookNavbar from "./BookNavbar";
 import Book from "./Book";
 import './css/book.css'
+import Functionality from "../../Functionality/states";
 
 
 
 export default function BookApp() {
+
   return (
     <div id="MainBookContainer">
       
@@ -30,8 +32,8 @@ export default function BookApp() {
         <div className="OptionsFooter">
             <div>
 
-                <button className="BookPageButton">Next Page</button>
-                <button className="BookPageButton">Prev Page</button>
+                <button className="BookPageButton" onChange={}>←</button>
+                <button className="BookPageButton">→</button>
 
             </div>
             
