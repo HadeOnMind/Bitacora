@@ -32,7 +32,7 @@ export default function BookApp() {
         <div className="OptionsFooter">
             <div>
 
-                <button className="BookPageButton" onChange={}>←</button>
+                <button className="BookPageButton">←</button>
                 <button className="BookPageButton">→</button>
 
             </div>

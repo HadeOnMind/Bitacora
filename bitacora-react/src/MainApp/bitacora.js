@@ -4,7 +4,7 @@ import BitacoraFooter from "../Components/Bookmain/BitacoraFooter";
 import BitacoraHeader from "../Components/Bookmain/BitacoraHeader";
 import { Routes, Route, useLocation} from "react-router-dom";
 import ListSlider from '../Components/Bookmain/ListSlider'
-
+import Comunity from "./communityBitacora";
 
 export default function Bitacora () {
 
@@ -32,9 +32,7 @@ export default function Bitacora () {
 
           </div>
 
-          {!BookPath &&(<div id="placerholdersection">
-            placeholdersection
-          </div>) }
+          {!BookPath &&(<Comunity />) }
 
 
           {!BookPath &&(<div id="bitacoraFooter">

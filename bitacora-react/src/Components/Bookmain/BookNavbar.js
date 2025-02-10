@@ -4,11 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "./css/book.css"; // Import the CSS file
 
 export default function BookNavbar() {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate(); 
 
-  // Function to handle the "Go Back" button click
   const handleGoBack = () => {
-    navigate(-1); // Go back to the previous page
+    navigate(-1); 
   };
 
   return (
